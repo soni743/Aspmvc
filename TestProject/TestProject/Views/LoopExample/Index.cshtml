@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+       @{ 
+           int k;
+           for(k=1; k<=5; k++)
+           {
+               @k.ToString();
+               <br/>
+           }
+       }
+
+        @{ 
+            int i;
+            i = 10;
+            while(i>=6)
+            {
+                @i.ToString();
+                <br/>
+                i = i - 2;
+            }
+        }
+
+        @{ 
+
+            int p;
+            p = 5;
+            do
+            {
+                @p.ToString();
+                p = p - 1;
+                <br/>
+            } while (p >= 2);
+        }
+
+        @{ 
+            string str = "";
+            if(1>0)
+            {
+                str = "Hello World";
+            }
+
+        }
+        <p>@str</p>
+    </div>
+</body>
+</html>

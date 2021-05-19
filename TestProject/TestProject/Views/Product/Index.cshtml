@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Current Date and Time</h1>
+        <h2>@DateTime.Now.ToString()</h2>
+
+        @{
+            var date = DateTime.Now.ToShortDateString();
+            var msg = "Hello World!";
+
+            @:Today's date is @date
+            <text>Today's Message is @msg</text>
+        }
+
+        <p>
+            <h1>Today's date is @date</h1> <br />
+            <h1>Today's Message is @msg</h1>
+        </p>
+
+        @{ 
+            if (DateTime.IsLeapYear(2024))
+            {
+                @: this is a leap year
+            }
+            else
+            {
+                @: this is not a leap year
+            }
+        }
+    </div>
+</body>
+</html>
