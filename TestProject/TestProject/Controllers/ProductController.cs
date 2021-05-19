@@ -14,7 +14,7 @@ namespace TestProject.Controllers
             return View();
         }
 
-        public ActionResult ProductDetails()
+        public ActionResult ProductDetails(int id, string name)
         {
             return View();
         }

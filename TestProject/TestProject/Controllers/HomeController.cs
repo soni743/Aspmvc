@@ -8,15 +8,18 @@ namespace TestProject.Controllers
 {
     public class HomeController : Controller
     {
-        Nullable<Int64> id = null;
-        
-        //Int64 j = null;
+        int productid = 10;
         [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("ProductDetails", "Product",new { id= productid, name="satyesh"});
+            //return View();
         }
 
+        public ActionResult CallAbout()
+        {
+            return View("About");
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
