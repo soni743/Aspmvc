@@ -12,8 +12,8 @@ namespace TestProject.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return RedirectToAction("ProductDetails", "Product",new { id= productid, name="satyesh"});
-            //return View();
+          //  return RedirectToAction("ProductDetails", "Product",new { id= productid, name="satyesh"});
+            return View();
         }
 
         public ActionResult CallAbout()

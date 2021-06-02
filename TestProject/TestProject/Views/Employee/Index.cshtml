@@ -1,0 +1,46 @@
+﻿@model TestProject.Models.Employeemodel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+ 
+    @using (Html.BeginForm("","",new { @enctype="multipart/form-data"}))
+    {
+        @Html.Label("Name")
+        @Html.TextBoxFor(x => x.Name, "") <br />
+
+        @Html.Label("Address")
+        @Html.TextAreaFor(x => x.Address, 5, 10, null) <br />
+
+        @Html.Label("Gender")
+        @Html.RadioButtonFor(x => x.Gender, "Male")@Html.Label("Male")
+        @Html.RadioButtonFor(x => x.Gender, "Female")@Html.Label("Female") <br />
+
+        @Html.Label("City")
+        @Html.DropDownListFor(x=>x.City,new SelectList(new[] {"Baroda","Surat","Rajkot" })) <br />
+
+        @Html.Label("Contact Number")
+        @Html.TextBoxFor(x=>x.Contactno,"") <br />
+
+        @Html.Label("Email")
+        @Html.TextBoxFor(x=>x.Email,"") <br />
+
+        @Html.Label("Password")
+        @Html.PasswordFor(x=>x.Password) <br />
+
+        @Html.Label("Upload Image")
+        @Html.TextBoxFor(x => x.Image, new {@type="file" })
+
+        <input type="submit" value="Submit" />
+
+    }
+</body>
+</html>

@@ -122,15 +122,25 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\EmployeeOperationController.cs" />
     <Compile Include="Controllers\FileUploadController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InlineController.cs" />
     <Compile Include="Controllers\JSResultController.cs" />
     <Compile Include="Controllers\LoopExampleController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\StandardController.cs" />
+    <Compile Include="Controllers\StaticMethodController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\ViewDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\MyHtmlHelpers.cs" />
+    <Compile Include="Models\Employeemodel.cs" />
     <Compile Include="Models\StudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -141,6 +151,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Usercss\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -283,6 +294,25 @@
     <Content Include="Views\LoopExample\Index.cshtml" />
     <Content Include="Views\LoopExample\Contact.cshtml" />
     <Content Include="Views\FileUpload\Index.cshtml" />
+    <Content Include="Views\Inline\Index.cshtml" />
+    <Content Include="Views\Inline\Contactus.cshtml" />
+    <Content Include="Views\Standard\Index.cshtml" />
+    <Content Include="Views\Employee\Index.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\ChangeProfile.cshtml" />
+    <Content Include="Views\User\ForgotPassword.cshtml" />
+    <Content Include="Views\Department\Register.cshtml" />
+    <Content Include="Views\ViewData\Details.cshtml" />
+    <Content Include="Views\ViewData\Create.cshtml" />
+    <Content Include="Views\ViewData\Edit.cshtml" />
+    <Content Include="Views\ViewData\Delete.cshtml" />
+    <Content Include="Views\ViewData\Index.cshtml" />
+    <Content Include="Views\ViewData\sdfsfsf.cshtml" />
+    <Content Include="Views\EmployeeOperation\Index.cshtml" />
+    <Content Include="Views\EmployeeOperation\Create.cshtml" />
+    <Content Include="Views\EmployeeOperation\Delete.cshtml" />
+    <Content Include="Views\StaticMethod\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

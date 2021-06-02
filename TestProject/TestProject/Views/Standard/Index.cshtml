@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("firstname", "Good Morning!") <br />
+        @Html.TextArea("address", "", 5, 10, null) <br />
+        @Html.Password("password") <br />
+        @Html.Hidden("surname", "soni") <br />
+        @Html.CheckBox("Hindi", true)@Html.Label("Hindi")
+        @Html.CheckBox("English", false)@Html.Label("English")
+        @Html.CheckBox("Gujarati", false)@Html.Label("Gujarati") <br />
+        @Html.RadioButton("gender", "Male")@Html.Label("Male")
+        @Html.RadioButton("gender", "Female", true)@Html.Label("Female") <br />
+        @Html.DropDownList("country", new SelectList(new[] { "India", "USA", "UK" })) <br />
+        @Html.ListBox("technology", new MultiSelectList(new[] { "C", "C++", "Java" })) <br />
+        @Html.TextBox("image", "", new { @type = "file" })
+        <input type="submit" value="Register" />
+
+        <button type="submit">Submit</button>
+    }
+</body>
+</html>
